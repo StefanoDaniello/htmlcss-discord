@@ -31,7 +31,7 @@ header{
 
 #jumbo{
     background-image: url("../img/jumbo.png");
-    min-height: 700px;
+    min-height: 670px;
     background-size: cover;
 }
 
@@ -42,6 +42,9 @@ header{
 
 .left{
     width: 60%;
+}
+.left img{
+    width: 100%;
 }
 .right{
     width: 40%;
@@ -55,24 +58,29 @@ footer{
 
 .footer-top{
     border-bottom: 1px solid var(--color-contrast);
+    padding-top: 5%;
 }
 
 /* utility  */
 .container{
     max-width: 1200px;
     margin:0 auto;
-    padding: 10px;
 }
-/* .footer-top-container{
-     max-width: 1200px;
-    margin:0 auto;
-    padding:5%;
-} */
 
 .small-container{
-    max-width: 800px;
+    max-width: 875px;
    margin: 0 auto;
    text-align: center;
+}
+.small-container-600{
+    max-width: 600px;
+    margin: 0 auto;
+   text-align: center;
+   height: 150px;
+}
+
+.padding-top{
+    padding-top: 10px;
 }
 
 /* utility-flex  */
@@ -88,7 +96,19 @@ footer{
     justify-content: space-between;
 }
 
+.justify-center{
+    justify-content: center;
+}
+
 .align-center{
     align-items: center;
     align-content: center;
+}
+
+
+.star-bg{
+    background-image: url(../img/stars.svg);
+    min-height: 50px;
+    width: 100%;
+    background-repeat: no-repeat;
 }
