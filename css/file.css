@@ -41,6 +41,13 @@ header{
     background-color: var(--color-section-bg);
 }
 
+.left{
+    width: 60%;
+}
+.right{
+    width: 40%;
+}
+
 /* footer  */
 footer{
     background-color: var(--color-primary);
@@ -52,4 +59,18 @@ footer{
 .container{
     max-width: 1200px;
     margin:0 auto;
+}
+.small-container{
+    max-width: 800px;
+   margin: 0 auto;
+   text-align: center;
+}
+
+/* utility-flex  */
+.d-flex{
+    display: flex;
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
 }
