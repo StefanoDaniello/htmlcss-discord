@@ -1,11 +1,22 @@
 /* reset  */
 *{
     margin: 0;
-    padding: 0;
+   
     box-sizing: border-box;
 }
 ul{
     list-style: none;
+}
+a {
+    text-decoration: none; 
+}
+
+a:hover, a:active {
+    color: #aaa;
+}
+
+button{
+    border: none;
 }
 
 /* general  */
@@ -35,6 +46,44 @@ header{
     background-size: cover;
 }
 
+header li{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header ul li:last-child{
+   padding-right: 50px;
+}
+   
+.white-link {
+    color: var(--color-scondary);
+}
+ul li a{
+    color: var(--color-scondary);
+}
+
+.black-link{
+    color:var(--color-primary);
+}
+
+.white-button{
+    background-color: var(--color-scondary);
+    padding: 15px 20px 15px 20px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+.primary-color-button{
+    background-color: var(--color-primary);
+    padding: 15px 20px 15px 20px;
+    border-radius: 30px;
+    font-size:15px;
+}
+
+.bottom-arrow::before{
+    content: "\2193";
+}
+
 /* main  */
 .section-bg{
     background-color: var(--color-section-bg);
@@ -50,6 +99,12 @@ header{
     width: 40%;
 }
 
+.star-bg{
+    background-image: url(../img/stars.svg);
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
 /* footer  */
 footer{
     background-color: var(--color-primary);
@@ -62,15 +117,19 @@ footer{
 }
 
 /* utility  */
+
+/* container  */
 .container{
     max-width: 1200px;
     margin:0 auto;
 }
 
 .small-container{
-    max-width: 875px;
+    max-width: 1000px;
    margin: 0 auto;
    text-align: center;
+   min-height: 600px;
+   
 }
 .small-container-600{
     max-width: 600px;
@@ -79,8 +138,25 @@ footer{
    height: 150px;
 }
 
+/* padding  */
+.padding-jumbo{
+    padding-top: 10%;
+}
 .padding-top{
     padding-top: 10px;
+}
+
+.padding-bottom{
+    padding-bottom: 20px;
+}
+
+/* margin  */
+.margin-top{
+    margin-top: 20px;
+}
+
+.margin-right{
+    margin-right: 10px;
 }
 
 /* utility-flex  */
@@ -96,19 +172,17 @@ footer{
     justify-content: space-between;
 }
 
-.justify-center{
-    justify-content: center;
-}
+
 
 .align-center{
     align-items: center;
     align-content: center;
 }
 
+/* font-size  */
 
-.star-bg{
-    background-image: url(../img/stars.svg);
-    min-height: 50px;
-    width: 100%;
-    background-repeat: no-repeat;
+.font-size{
+    font-size: 25px;
 }
+
+
