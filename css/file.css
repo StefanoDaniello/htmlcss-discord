@@ -60,6 +60,16 @@ ul li a{
     color: var(--color-scondary);
 }
 
+.weve{
+    background-image: url(../img/wave.svg);
+    min-height: 200px;
+    filter: invert(100%) sepia(35%) saturate(70%) hue-rotate(270deg) brightness(115%) contrast(93%);
+}
+
+.ruota-img { 
+    transform: rotate(180deg); 
+  } 
+
 /* button utility  */
 
 
@@ -244,6 +254,10 @@ i{
     flex-direction: row-reverse;
 }
 
+.column-reverse{
+    flex-direction: column-reverse;
+}
+
 .space-between{
     justify-content: space-between;
 }
@@ -259,4 +273,5 @@ i{
 .font-size{
     font-size: 25px;
 }
+
 
