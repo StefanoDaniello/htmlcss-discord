@@ -168,14 +168,19 @@ footer li{
 }
 
 .option-symbol:after {
-    content: ' \02C7';
+    content: '\2228';
     color: var(--color-scondary);
   
 }
 
-.size-loghi{
+footer ul img{
    width: 30px;
    vertical-align: middle;
+}
+
+i{
+    font-size: x-large;
+    padding-right: 15px;
 }
 
 
@@ -202,6 +207,11 @@ footer li{
    text-align: center;
    height: 200px;
 }
+
+.small-container-300{
+    max-width: 300px;
+}
+
 
 /* padding  */
 .padding-jumbo{
