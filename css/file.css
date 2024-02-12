@@ -13,13 +13,13 @@ a {
 
 a:hover:not(.button){
     text-decoration: underline;
-    color: var(--color-scondary);
+}
+
+a:hover:not(li a){
+    box-shadow: 0px 0px 15px 3px #5F5F5F;
 }
 
 
-a:hover, a:active{
-    color: #aaa;
-}
 
 button{
     border: none;
@@ -85,6 +85,7 @@ ul li a{
     border-radius: 20px;
     background-color: var(--color-scondary);
     color:var(--color-primary)
+    
 }
 
 .small-button{
@@ -211,7 +212,7 @@ i{
 
    
 }
-.small-container-600{
+.small-container-500{
     max-width: 500px;
     margin: 0 auto;
    text-align: center;
