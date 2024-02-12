@@ -66,9 +66,9 @@ ul li a{
     filter: invert(100%) sepia(35%) saturate(70%) hue-rotate(270deg) brightness(115%) contrast(93%);
 }
 
-.ruota-img { 
+.down-img{ 
     transform: rotate(180deg); 
-  } 
+} 
 
 /* button utility  */
 
