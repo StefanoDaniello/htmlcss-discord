@@ -11,7 +11,13 @@ a {
     text-decoration: none; 
 }
 
-a:hover, a:active {
+a:hover:not(.button){
+    text-decoration: underline;
+    color: var(--color-scondary);
+}
+
+
+a:hover, a:active{
     color: #aaa;
 }
 
@@ -73,36 +79,30 @@ ul li a{
 /* button utility  */
 
 
-.white-link {
+.button{
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 20px;
+    background-color: var(--color-scondary);
+    color:var(--color-primary)
+}
+
+.small-button{
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 0.8em;
+}
+
+.button-black{
+    background-color: var(--color-primary);
     color: var(--color-scondary);
 }
 
-.black-link{
-    color:var(--color-primary);
-}
-
-
-.white-button{
-    background-color: var(--color-scondary);
-    color:var(--color-primary);
-    padding: 15px 20px 15px 20px;
-    border-radius: 30px;
-    font-size: 15px;
-}
-
-.primary-color-button{
-    background-color: var(--color-primary);
-    padding: 15px 20px 15px 20px;
-    border-radius: 30px;
-    font-size:15px;
-}
-
-.contrast-button{
+.button-contrast{
     background-color: var(--color-contrast);
-    padding: 15px 20px 15px 20px;
-    border-radius: 30px;
-    font-size: 15px;
+    color: var(--color-scondary);
 }
+
 
 .bottom-arrow-white::before{
     content: "\2193";
@@ -235,6 +235,10 @@ i{
     padding-bottom: 20px;
 }
 
+.padding-0{
+    padding: 0px;
+}
+
 
 /* margin  */
 .margin-top{
@@ -243,6 +247,10 @@ i{
 
 .margin-right{
     margin-right: 10px;
+}
+
+.m-right-5{
+    margin-right: 5px;
 }
 
 /* utility-flex  */
@@ -278,4 +286,7 @@ i{
     font-size: 25px;
 }
 
+.font-size-15{
+    font-size: 15px;
+}
 
