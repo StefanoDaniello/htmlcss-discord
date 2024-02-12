@@ -136,7 +136,7 @@ main section div {
 }
 
 main h3{
-    font-size: 50px;
+    font-size: 45px;
     padding-bottom: 5%;
 }
 
@@ -265,6 +265,10 @@ i{
 .align-center{
     align-items: center;
     align-content: center;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
 }
 
 /* font-size  */
